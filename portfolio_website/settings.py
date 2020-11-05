@@ -119,4 +119,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIR = PROJECT_DIR.joinpath("static")
+STATICFILES_DIRS = [
+    PROJECT_DIR.joinpath("static"),
+]
