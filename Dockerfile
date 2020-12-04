@@ -1,11 +1,13 @@
 FROM python:3.8.4
 
-WORKDIR /app
+ENV PYTHONUNBUFFERED 1
 
-ADD . /app
+WORKDIR /web_app
 
-COPY ./requirements.txt /app/requirements.txt
+ADD . /web_app/
+
+COPY ./requirements.txt /web_app/requirements.txt
 
 RUN pip install -r requirements.txt
 
-COPY . /app
+COPY . /web_app/
