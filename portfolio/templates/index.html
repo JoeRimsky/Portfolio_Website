@@ -1,63 +1,8 @@
+{% extends "base.html" %}
+
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utclearf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Joseph Rimsky</title>
-        
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="{% static 'assets/img/logo.ico' %}" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <!-- Third party plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
-        <!-- Core theme CSS -->
-        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
-        <!-- Core JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </head>
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="">Joseph Rimsky</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#About">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Portfolio
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href={% url 'portfolio' %}>Photography & Videography</a>
-                            <a class="dropdown-item" href={% url 'portfolio' %}>Professional Career</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+{% block page_content %}
     <!-- Landing Page -->
     <header class="masthead">
         <div class="container h-100">
@@ -76,7 +21,6 @@
             <h2 class="font-weight-light">About</h2>
             <p>Hi, my name is Joe and welcome to my portfolio!</p>
             <p>On this site you will have the oppurtunity to explore both projects from my professional career, as well as my personal hobby.</p>
-            <p>If you have any questions or request, feel free to email me at <a href="mailto:jrmedia@joerimsky.com">jrmedia@joerimsky.com</a>.</p>
         </div>
     </section>
     <section class="py-0">
@@ -92,4 +36,4 @@
             <small><!-- Insert some foother text here --></small>
         </div>
     </footer>
-</html>
+{% endblock %}

@@ -2,6 +2,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 PROJECT_DIR = BASE_DIR.joinpath("project_app")
+PORTFOLIO_DIR = BASE_DIR.joinpath("portfolio")
 
 SECRET_KEY = 'h*2u(k*24!uq&6@576n4h$jwdn3v44m_+!99^svkoe&end^z5w'
 
@@ -17,6 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap4',
     'portfolio',
 ]
 
@@ -89,5 +91,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    PROJECT_DIR.joinpath("static"),
+    PORTFOLIO_DIR.joinpath("static"),
 ]
