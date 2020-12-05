@@ -4,6 +4,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 PROJECT_DIR = BASE_DIR.joinpath("project_app")
 PORTFOLIO_DIR = BASE_DIR.joinpath("portfolio")
 
+MEDIA_ROOT = BASE_DIR
+MEDIA_URL = '/photos/'
+
 SECRET_KEY = 'h*2u(k*24!uq&6@576n4h$jwdn3v44m_+!99^svkoe&end^z5w'
 
 DEBUG = True

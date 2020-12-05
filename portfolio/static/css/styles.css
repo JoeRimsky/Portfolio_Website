@@ -8,10 +8,14 @@
 }
 
 @font-face {
-  font-family: 'Quasimoda Light';
+  font-family: 'Futura Light';
   font-style: normal;
   font-weight: normal;
-  src: local('Quasimoda Light'), url('../fonts/Quasimoda\ Light.woff') format('woff');
+  src: local('Futura Light'), url('../fonts/Futura/Futura\ Light\ font.ttf') format('truetype');
+}
+
+h1 {
+  font-family: 'Futura Light';
 }
 
 @media (min-width: 992px) {
