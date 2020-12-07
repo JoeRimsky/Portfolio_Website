@@ -9,7 +9,7 @@ def portfolio(request):
     category = os.path.basename(request.path).capitalize()
     context = {
         'page_title': "- " + category,
-        'photos': Photo.objects.filter(category=category)
+        'photos': Photo.objects.filter(category=category),
+        'category': category
     }
-    print(category, Photo.objects.filter(category=category))
     return render(request, 'portfolio.html', context=context)

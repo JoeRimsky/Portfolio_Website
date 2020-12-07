@@ -1,4 +1,4 @@
 {
-  "python.pythonPath": "webdev\\Scripts\\python.exe",
+  "python.pythonPath": "webdev/bin/python3.7",
   "git.ignoreLimitWarning": true
 }

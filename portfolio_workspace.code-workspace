@@ -5,6 +5,11 @@
 		}
 	],
 	"settings": {
-		"git.ignoreLimitWarning": true
+		"git.ignoreLimitWarning": true,
+		"python.pythonPath": "/home/ballbot/Desktop/Portfolio_Website/webdev/Scripts/python.exe",
+		"json.schemas": [
+		folders
+		
+		]
 	}
 }
