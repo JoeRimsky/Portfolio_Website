@@ -4,7 +4,7 @@ help() {
 }
 
 init() {
-    source webdev/bin/activate
+    source webdev/Scripts/activate
     python manage.py runserver
 }
 

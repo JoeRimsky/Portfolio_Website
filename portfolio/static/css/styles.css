@@ -1,6 +1,7 @@
 .masthead {
   height: 100vh;
   min-height: 500px;
+  width: 100%;
   background-image: url('../assets/img/background.png');
   background-size: cover;
   background-position: center;
