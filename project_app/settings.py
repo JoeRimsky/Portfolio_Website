@@ -93,6 +93,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    PORTFOLIO_DIR.joinpath("static"),
-]
+STATIC_ROOT = PORTFOLIO_DIR.joinpath('static')
+
+# STATICFILES_DIRS = [
+#     PORTFOLIO_DIR.joinpath('static'),
+# ]

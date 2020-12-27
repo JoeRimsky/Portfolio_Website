@@ -7,9 +7,12 @@
 	"settings": {
 		"git.ignoreLimitWarning": true,
 		"python.pythonPath": "/home/ballbot/Desktop/Portfolio_Website/webdev/Scripts/python.exe",
-		"json.schemas": [
-		folders
-		
-		]
+		"css.validate": false,
+		"css.lint.emptyRules": "ignore",
+		"css.lint.fontFaceProperties": "ignore",
+		"css.lint.propertyIgnoredDueToDisplay": "ignore",
+		"css.lint.unknownAtRules": "ignore",
+		"css.lint.unknownProperties": "ignore",
+		"css.lint.vendorPrefix": "ignore"
 	}
 }

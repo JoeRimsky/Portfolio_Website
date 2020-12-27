@@ -1,4 +1,8 @@
 {
-  "python.pythonPath": "webdev/bin/python3.7",
-  "git.ignoreLimitWarning": true
+  "python.pythonPath": "webdev\\Scripts\\python.exe",
+  "git.ignoreLimitWarning": true,
+  "python.linting.enabled": true,
+  "css.styleSheets": [
+    "portfolio\\static\\css\\styles.css"
+  ],
 }
